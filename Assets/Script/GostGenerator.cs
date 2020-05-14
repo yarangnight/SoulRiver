@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class GostGenerator : MonoBehaviour
 {
-    GameObject Player = new GameObject(); //플레이어
+    GameObject Player; //플레이어
  
-    GameObject GostPrefab = new GameObject(); // 유령 프리팹을 가져옴
-    GameObject Arrange_Gost = new GameObject(); 
+    GameObject GostPrefab; // 유령 프리팹을 가져옴
+    GameObject Arrange_Gost; 
 
-    int ScaleKey = 0; 
+    int ScaleKey = 0;
+
+    private void Awake()
+    {
+    }
+
     void Start()
     {
         Player = GameObject.Find("Player");

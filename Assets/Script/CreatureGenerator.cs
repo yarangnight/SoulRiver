@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CreatureGenerator : MonoBehaviour
 {
-    GameObject CreaturePrefab = new GameObject(); // 크리쳐
-    GameObject TP = new GameObject(); // 맵에 뿌려지는 타일들의 부모를 데려옴
+    GameObject CreaturePrefab; // 크리쳐
+    GameObject TP; // 맵에 뿌려지는 타일들의 부모를 데려옴
     // Start is called before the first frame update
     void Start()
     {

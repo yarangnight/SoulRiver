@@ -22,7 +22,7 @@ public class TileGenerator : MonoBehaviour
 
     void Awake()
     {
-        GameObject TilePrefab = Resources.Load("TilePrefab") as GameObject;
+        GameObject TilePrefab = Resources.Load("Chapter 1/Tile/TilePrefab") as GameObject;
         GameObject TP = GameObject.Find("TileParent");
         GetSize Background = GameObject.Find("Background").GetComponent<GetSize>(); //Background 사이즈 확인용       
 

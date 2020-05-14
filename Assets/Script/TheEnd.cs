@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class TheEnd : MonoBehaviour
 { //임의 종료
-    GameObject TP = new GameObject(); // 타일 부모
+    GameObject TP; // 타일 부모
     public bool Stage_1 = false; //임의 클리어 판정
     List<float> TilePos_X; //x 축 값을 정렬
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        
+    }
+
+
     void Start()
     {
         TP = GameObject.Find("TileParent"); //타일 부모

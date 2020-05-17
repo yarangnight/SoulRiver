@@ -24,6 +24,11 @@ public class TileNavigator : Singleton<TileNavigator>//타일 네비게이션, �
 
         while (true)
         {
+            if(tileQueue.Count <= 0)
+            {
+                return null;
+            }
+
             Tile temp = tileQueue.Dequeue();//디큐
             if (temp == dest)//목적지인지 체크 맞으면 break;
             {
@@ -40,12 +45,6 @@ public class TileNavigator : Singleton<TileNavigator>//타일 네비게이션, �
                 }
             }
         }
-
-        if(tileVisited[dest.m_Id] == false)
-        {
-            return null;
-        }
-
 
         int pathLength = 0;
         List<Tile> resultPath = new List<Tile>();

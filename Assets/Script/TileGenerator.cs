@@ -17,7 +17,6 @@ public class TileGenerator : MonoBehaviour
     // float Max_X = 8;
     //float Max_Y = 4;
 
-
     // Start is called before the first frame update
 
     void Awake()

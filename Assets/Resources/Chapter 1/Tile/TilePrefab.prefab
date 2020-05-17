@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3461490328428370617}
   - component: {fileID: 1779912908573636854}
-  - component: {fileID: -7373994543906805062}
   - component: {fileID: -4052192914688761856}
   - component: {fileID: 939516903903351016}
-  m_Layer: 0
+  - component: {fileID: 7933653121581431421}
+  m_Layer: 8
   m_Name: TilePrefab
   m_TagString: TilePrefab
   m_Icon: {fileID: 0}
@@ -84,22 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &-7373994543906805062
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9068497846809094886}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
-  serializedVersion: 2
-  m_Radius: 0.3
 --- !u!114 &-4052192914688761856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,3 +108,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f714afb49fd3d4dbd9041f6a88777a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_CloseTiles: []
+  m_Id: 0
+--- !u!60 &7933653121581431421
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068497846809094886}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.4712644, y: 1.4712644}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.50699174, y: -0.05733168}
+      - {x: -0.0023236573, y: 0.19222942}
+      - {x: -0.51208806, y: -0.060138386}
+      - {x: 0.012365681, y: -0.31026542}

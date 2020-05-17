@@ -224,7 +224,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -350,7 +350,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -476,7 +476,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -602,7 +602,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -812,7 +812,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -943,7 +943,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -1069,7 +1069,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -1210,7 +1210,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -1336,7 +1336,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -1467,7 +1467,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -1593,7 +1593,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -1719,7 +1719,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -1870,7 +1870,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -1996,7 +1996,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -2122,7 +2122,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -2268,7 +2268,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -2404,7 +2404,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -2578,7 +2578,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -2704,7 +2704,7 @@ PrefabInstance:
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_CloseTiles.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 939516903903351016, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}

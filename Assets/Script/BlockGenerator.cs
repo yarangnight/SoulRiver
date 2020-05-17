@@ -39,7 +39,6 @@ public class BlockGenerator : MonoBehaviour
     // 예외가 있는 블럭이 맵에 있는 경우 새로운 프리팹 생성 제한
     // 드래그 종료 후 다시 정렬 시키고 색은 원래대로 되돌려야함
 
-
     private void Awake()
     {
     }

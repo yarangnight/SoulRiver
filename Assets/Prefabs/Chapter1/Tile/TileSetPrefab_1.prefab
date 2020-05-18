@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1909425887461672894}
   - component: {fileID: 3658487482855663089}
   - component: {fileID: 637196697867143968}
+  - component: {fileID: 6157324924142159200}
   m_Layer: 8
   m_Name: 1
   m_TagString: TilePrefab
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1000
   m_Sprite: {fileID: 21300000, guid: 7fe2de47159c54e4e8678348bfe88bc4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.49803922}
   m_FlipX: 0
@@ -107,11 +108,30 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.0212195, y: 0.07707314}
-      - {x: 1.0096586, y: 0.07321949}
-      - {x: 0.026975654, y: -0.45858538}
-      - {x: -1.0250734, y: 0.065512165}
-      - {x: -0.0038536647, y: 0.5934634}
+    - - {x: -0.0060022296, y: 0.5875081}
+      - {x: 1.0322199, y: 0.078859806}
+      - {x: 0.025547259, y: -0.4253751}
+      - {x: -1.0120225, y: 0.07821031}
+--- !u!114 &6157324924142159200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6318494313458808801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52bd8a3144012fb468d25fe0ab391bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Parents: {fileID: -733275052907914784}
+  m_TilePrefab: {fileID: 9068497846809094886, guid: 3edd984210334114882c7762b321a4e7,
+    type: 3}
+  m_TilesPosition:
+  - {x: 0, y: 0}
+  - {x: 0, y: 0.5}
+  - {x: -0.5, y: 0.25}
+  - {x: 0.5, y: 0.25}
 --- !u!1 &9150880947283009041
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_targetSprite: {fileID: 3658487482855663089}
+  m_HaveToSort: 0
 --- !u!114 &-733275052907914784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,5 +191,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a333f9bd18d694294ee9a4515e01d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Sprites:
-  - {fileID: 3658487482855663089}
+  m_Children:
+  - {fileID: 6318494313458808801}

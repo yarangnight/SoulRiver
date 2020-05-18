@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 8591886042049112503}
   - component: {fileID: 7843025329078349429}
   - component: {fileID: 1096241540887124490}
+  - component: {fileID: 6772565682207396433}
   m_Layer: 0
   m_Name: 6_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8591886042049112503
 Transform:
   m_ObjectHideFlags: 0
@@ -39,7 +40,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185657158133840140}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1000
   m_Sprite: {fileID: 21300000, guid: 0896f018fef3adf42b74a3014bf5097a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.49803922}
   m_FlipX: 0
@@ -115,6 +116,21 @@ PolygonCollider2D:
       - {x: 0.28997642, y: -0.52155507}
       - {x: 0.78093797, y: -0.3005225}
       - {x: 0.26014146, y: -0.040570498}
+--- !u!114 &6772565682207396433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185657158133840140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52bd8a3144012fb468d25fe0ab391bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Parents: {fileID: 1190075178268374273}
+  m_TilePrefab: {fileID: 0}
+  m_TilesPosition: []
 --- !u!1 &4688749281723689006
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,6 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_targetSprite: {fileID: 5305518652180928503}
+  m_HaveToSort: 0
 --- !u!114 &1190075178268374273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,9 +191,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a333f9bd18d694294ee9a4515e01d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Sprites:
-  - {fileID: 5305518652180928503}
-  - {fileID: 7843025329078349429}
+  m_Children:
+  - {fileID: 4988979023502201363}
+  - {fileID: 1185657158133840140}
 --- !u!1 &4988979023502201363
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +205,7 @@ GameObject:
   - component: {fileID: 6621976861548548744}
   - component: {fileID: 5305518652180928503}
   - component: {fileID: 7862608038128739592}
+  - component: {fileID: 3196059775850700857}
   m_Layer: 0
   m_Name: 6_1
   m_TagString: Untagged
@@ -247,7 +265,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1000
   m_Sprite: {fileID: 21300000, guid: b850811bab36809459fa6faf51e50a6a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.49803922}
   m_FlipX: 0
@@ -292,3 +310,18 @@ PolygonCollider2D:
       - {x: -0.2790732, y: 0.4489077}
       - {x: -1.26011, y: -0.047434866}
       - {x: -0.76267624, y: -0.2864327}
+--- !u!114 &3196059775850700857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4988979023502201363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52bd8a3144012fb468d25fe0ab391bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Parents: {fileID: 1190075178268374273}
+  m_TilePrefab: {fileID: 0}
+  m_TilesPosition: []

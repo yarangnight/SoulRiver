@@ -8,6 +8,9 @@ public class GridSnaper : MonoBehaviour
     [SerializeField]
     private SpriteRenderer m_targetSprite = null;
 
+    [SerializeField]
+    private bool m_HaveToSort = false;
+
     void LateUpdate()
     {
         float x = transform.position.x * 2;
@@ -63,7 +66,7 @@ public class GridSnaper : MonoBehaviour
         }
 
         transform.position = new Vector3(x / 2, y / 4, transform.position.z);
-        if(m_targetSprite != null)
+        if(m_targetSprite != null && m_HaveToSort)
         {
             m_targetSprite.sortingOrder = -(int)y;
         }

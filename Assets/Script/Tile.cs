@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class Tile : MonoBehaviour
 {
     private Tile[] m_closeTiles;
@@ -30,68 +29,6 @@ public class Tile : MonoBehaviour
                 v.DetectCloseTile();//자신을 가지고 있지 않다면 다시 인식하도록 함
             }
         }
-    }
-
-    // Update is called once per frame
-    void LateUpdate()
-    {
-        float x = transform.position.x * 2;
-        float y = transform.position.y * 4;
-
-        if (Mathf.Ceil(x) == 1 && Mathf.Floor(y) == 4)
-        {
-            Debug.Log("eee");
-        }
-
-        if ((int)(Mathf.Floor(x) + Mathf.Floor(y)) % 2 == 0)//xy의 합이 짝수
-        {
-            if(((x - Mathf.Floor(x)) + (y - Mathf.Floor(y))) >= 1)
-            {
-                x = Mathf.Ceil(x);
-                y = Mathf.Ceil(y);
-                if (x == 1 && y == 4)
-                {
-                    Debug.Log("eee");
-                }
-            }
-            else
-            {
-                x = Mathf.Floor(x);
-                y = Mathf.Floor(y);
-                if (x == 1 && y == 4)
-                {
-                    Debug.Log("eee");
-                }
-            }
-        }
-        else//xy의 합이 홀수
-        {
-            if( ((Mathf.Ceil(x) - x)+ (y - Mathf.Floor(y))) >= 1)
-            {
-                x = Mathf.Floor(x);
-                y = Mathf.Ceil(y);
-                if (x == 1 && y == 4)
-                {
-                    Debug.Log("eee");
-                }
-            }
-            else
-            {
-                x = Mathf.Ceil(x);
-                y = Mathf.Floor(y);
-                if((int)(x+y)% 2 != 0)
-                {
-                    x -= 1;
-                }
-
-            }
-        }
-
-
-
-
-        transform.position = new Vector3(x / 2,y / 4,transform.position.z);
-        GetComponent<SpriteRenderer>().sortingOrder = -(int)y;
     }
 
     public void DetectCloseTile()

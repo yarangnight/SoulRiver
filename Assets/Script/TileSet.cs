@@ -1,38 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class TileSet : MonoBehaviour
 {
     [SerializeField]
-    private GameObject[] m_Children;
+    private GameObject[] m_Children = null;
 
     private int m_ChildrenSel;
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Return))
-        {
-            InstallTile();
-        }
-        else if(Input.GetKeyDown(KeyCode.R))
-        {
-            RotateTileSet();
-        }
-    }
 
     private void OnMouseDown()
     {
         Debug.Log("down");
     }
 
-    public void ChildTileOnDrag()
-    {
-        Vector3 temp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector3(temp.x, temp.y, 0);
-    }
-
-    public void RotateTileSet()
+    public void RotateTileSet_CW()
     {
         m_Children[m_ChildrenSel++].SetActive(false);
 
@@ -41,9 +25,22 @@ public class TileSet : MonoBehaviour
         m_Children[m_ChildrenSel].SetActive(true);
     }
 
+    public void RotateTileSet_RCW()
+    {
+        m_Children[m_ChildrenSel--].SetActive(false);
+
+        if (m_ChildrenSel <= 0)
+        {
+            m_ChildrenSel = m_Children.Length - 1;
+        }
+        m_Children[m_ChildrenSel].SetActive(true);
+    }
+
     public void InstallTile()
     {
-        m_Children[m_ChildrenSel].GetComponent<TileSetChild>().InstallTiles();
-        Destroy(gameObject);
+        if (m_Children[m_ChildrenSel].GetComponent<TileSetChild>().InstallTiles())
+        {
+            Destroy(gameObject);
+        }
     }
 }

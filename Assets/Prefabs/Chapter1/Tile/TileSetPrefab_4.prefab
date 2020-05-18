@@ -194,7 +194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Parents: {fileID: 5108478896617866565}
-  m_TilePrefab: {fileID: 0}
+  m_TilePrefab: {fileID: 9068497846809094886, guid: 3edd984210334114882c7762b321a4e7,
+    type: 3}
   m_TilesPosition:
   - {x: 0, y: 0}
   - {x: -0.5, y: -0.25}
@@ -327,7 +328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Parents: {fileID: 5108478896617866565}
-  m_TilePrefab: {fileID: 0}
+  m_TilePrefab: {fileID: 9068497846809094886, guid: 3edd984210334114882c7762b321a4e7,
+    type: 3}
   m_TilesPosition:
   - {x: 0, y: 0}
   - {x: 0.5, y: -0.25}
@@ -460,7 +462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Parents: {fileID: 5108478896617866565}
-  m_TilePrefab: {fileID: 0}
+  m_TilePrefab: {fileID: 9068497846809094886, guid: 3edd984210334114882c7762b321a4e7,
+    type: 3}
   m_TilesPosition:
   - {x: 0, y: 0}
   - {x: -0.5, y: 0.25}
@@ -593,7 +596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Parents: {fileID: 5108478896617866565}
-  m_TilePrefab: {fileID: 0}
+  m_TilePrefab: {fileID: 9068497846809094886, guid: 3edd984210334114882c7762b321a4e7,
+    type: 3}
   m_TilesPosition:
   - {x: 0, y: 0}
   - {x: 0.5, y: 0.25}

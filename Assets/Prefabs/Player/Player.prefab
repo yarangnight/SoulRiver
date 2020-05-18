@@ -44,9 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0acce260db82f574990891f7e542e1cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentMapName: 
-  m_initTile: {fileID: 0}
-  Key: 0
+  m_PlayerSpeed: 0.02
 --- !u!1 &561125383857428769
 GameObject:
   m_ObjectHideFlags: 0

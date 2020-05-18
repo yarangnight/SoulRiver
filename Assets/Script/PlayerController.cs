@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     private Coroutine m_MoveCoroutine = null;
 
+    [SerializeField]
+    private float m_PlayerSpeed = 0.01f;
+
     void Start()
     {
         //DontDestroyOnLoad(this.gameObject); // 씬이 넘어갔을 때 오브젝트가 사라지는 것을 방지
@@ -66,7 +69,7 @@ public class PlayerController : MonoBehaviour
         int i = 0;
         while (true)
         {
-            transform.position = Vector3.MoveTowards(transform.position, path[i].transform.position, 0.01f);
+            transform.position = Vector3.MoveTowards(transform.position, path[i].transform.position, m_PlayerSpeed);
             if (Vector3.Distance(transform.position, path[i].transform.position) <= Vector3.kEpsilon)
             {
                 ++i;

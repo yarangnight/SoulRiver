@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class GridSnaper : MonoBehaviour
+public class GridSnaper : MonoBehaviour//정렬은 반드시 업데이트에서 하자 LateUpdate를 실험해 봤는데 trasnform.position이 정렬되기 전 값이 나오게 된다
 {
     [SerializeField]
     private SpriteRenderer m_targetSprite = null;
@@ -11,15 +11,10 @@ public class GridSnaper : MonoBehaviour
     [SerializeField]
     private bool m_HaveToSort = false;
 
-    void LateUpdate()
+    void Update()
     {
         float x = transform.position.x * 2;
         float y = transform.position.y * 4;
-
-        if (Mathf.Ceil(x) == 1 && Mathf.Floor(y) == 4)
-        {
-            Debug.Log("eee");
-        }
 
         if ((int)(Mathf.Floor(x) + Mathf.Floor(y)) % 2 == 0)//xy의 합이 짝수
         {

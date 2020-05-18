@@ -130,7 +130,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parents: {fileID: 8271583983314577377}
   m_TilePrefab: {fileID: 0}
-  m_TilesPosition: []
+  m_TilesPosition:
+  - {x: 0, y: 0}
+  - {x: 0.5, y: 0.25}
+  - {x: -0.5, y: 0.25}
+  - {x: -0.5, y: -0.25}
 --- !u!1 &3758686183739019853
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,7 +265,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parents: {fileID: 8271583983314577377}
   m_TilePrefab: {fileID: 0}
-  m_TilesPosition: []
+  m_TilesPosition:
+  - {x: 0, y: 0}
+  - {x: -0.5, y: 0.25}
+  - {x: -0.5, y: -0.25}
+  - {x: 0.5, y: -0.25}
 --- !u!1 &5558204636447736729
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,7 +467,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parents: {fileID: 8271583983314577377}
   m_TilePrefab: {fileID: 0}
-  m_TilesPosition: []
+  m_TilesPosition:
+  - {x: 0, y: 0}
+  - {x: -0.5, y: 0.25}
+  - {x: 0.5, y: 0.25}
+  - {x: 0.5, y: -0.25}
 --- !u!1 &8212911351229394551
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,4 +602,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Parents: {fileID: 8271583983314577377}
   m_TilePrefab: {fileID: 0}
-  m_TilesPosition: []
+  m_TilesPosition:
+  - {x: 0, y: 0}
+  - {x: -0.5, y: -0.25}
+  - {x: 0.5, y: -0.25}
+  - {x: 0.5, y: 0.25}

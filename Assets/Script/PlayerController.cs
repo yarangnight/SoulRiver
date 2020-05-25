@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                Debug.LogError("not Detected");
+                Debug.Log("not Detected");
             }
         }
     }

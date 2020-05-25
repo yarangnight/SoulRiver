@@ -53,7 +53,7 @@ public class TileSetSpawner : MonoBehaviour
             m_RotateButton_CW.onClick.RemoveAllListeners();
             m_SelectButton.onClick.RemoveAllListeners();
 
-            m_NowTileSet = Instantiate(m_TileSetArr[num],new Vector3(-6,4,0),Quaternion.Euler(0,0,0));
+            m_NowTileSet = Instantiate(m_TileSetArr[num],new Vector3(-9.5f,-4,0),Quaternion.Euler(0,0,0));
             m_ButtonPanel.gameObject.SetActive(true);
 
             m_RotateButton_RCW.onClick.AddListener(m_NowTileSet.GetComponent<TileSet>().RotateTileSet_RCW);

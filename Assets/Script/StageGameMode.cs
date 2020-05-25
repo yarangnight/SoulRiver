@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StageGameMode : MonoBehaviour
@@ -22,6 +23,16 @@ public class StageGameMode : MonoBehaviour
     [SerializeField]
     private GameEndTile m_EndTile = null;
 
+    [SerializeField]
+    private string m_NextSceneName = null;
+
+    [SerializeField]
+    private Camera m_CharacterCamera = null;
+    [SerializeField]
+    private Camera m_FullScreenCamera = null;
+
+    private bool m_IsCharCamera = true;
+
     private void Awake()
     {
         foreach(var v in m_Ghosts)
@@ -29,17 +40,6 @@ public class StageGameMode : MonoBehaviour
             v.m_OnGainEvent.AddListener(OnGhostAcquired);
         }
         m_EndTile.m_OnPlayerEnter.AddListener(OnGameEnd);
-    }
-
-    // Start is called before the first frame update
-    private void Start()
-    {
-    }
-
-    // Update is called once per frame
-    private void Update()
-    {
-        
     }
 
     public void SetGamePause(bool haveToPause)
@@ -72,5 +72,26 @@ public class StageGameMode : MonoBehaviour
     private void OnGhostAcquired()
     {
         ++m_GhostCnt;
+    }
+
+    public void NextStage()
+    {
+        SceneManager.LoadScene(m_NextSceneName);
+    }
+
+    public void SwapCamera()
+    {
+        if(m_IsCharCamera)
+        {
+            m_IsCharCamera =! m_IsCharCamera;
+            m_CharacterCamera.enabled = false;
+            m_FullScreenCamera.enabled = true;
+        }
+        else
+        {
+            m_IsCharCamera = !m_IsCharCamera;
+            m_CharacterCamera.enabled = true;
+            m_FullScreenCamera.enabled = false;
+        }
     }
 }

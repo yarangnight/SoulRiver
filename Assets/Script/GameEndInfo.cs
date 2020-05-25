@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class GameEndInfo : MonoBehaviour
 {
     [SerializeField]
-    private Image[] m_Stars1;
+    private Image[] m_Stars1 = null;
     [SerializeField]
-    private Image[] m_Stars2;
+    private Image[] m_Stars2 = null;
     [SerializeField]
-    private Text[] m_QuestText;
+    private Text[] m_QuestText = null;
 
     public void ShowGameEndInfo(int num)
     {

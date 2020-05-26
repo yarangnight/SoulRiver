@@ -60,6 +60,7 @@ public class TileNavigator : Singleton<TileNavigator>//타일 네비게이션, �
             temp2 = tileParents[temp2.m_Id];
         }
         resultPath.Reverse();
+        resultPath.RemoveAt(0);
 
         return resultPath.ToArray();
     }

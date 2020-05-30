@@ -115,7 +115,11 @@ public class PlayerController : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, path[i].transform.position, m_PlayerSpeed);
             if (Vector3.Distance(transform.position, path[i].transform.position) <= Vector3.kEpsilon)
             {
-                ++i;
+                if(++i >= path.Length)
+                {
+                    break;
+                }
+                
                 if (transform.position.y < path[i].transform.position.y)
                 {
                     m_PlayerAnimator.SetBool("IsFront", false);

@@ -32,6 +32,8 @@ public class TileSetSpawner : MonoBehaviour
 
     private GameObject m_NowTileSet = null;
 
+    private int m_LatestTileSetNum = -1;
+
     private void Awake()
     {
         for(int i = 0; i < m_TileLimit.Length;++i)
@@ -56,16 +58,12 @@ public class TileSetSpawner : MonoBehaviour
             m_NowTileSet = Instantiate(m_TileSetArr[num],new Vector3(-9.5f,-4,0),Quaternion.Euler(0,0,0));
             m_ButtonPanel.gameObject.SetActive(true);
 
-            m_RotateButton_RCW.onClick.AddListener(m_NowTileSet.GetComponent<TileSet>().RotateTileSet_RCW);
+            m_RotateButton_RCW.onClick.AddListener(m_NowTileSet.GetComponent<TileSet>().CancelTile);
             m_RotateButton_CW.onClick.AddListener(m_NowTileSet.GetComponent<TileSet>().RotateTileSet_CW);
             m_SelectButton.onClick.AddListener(m_NowTileSet.GetComponent<TileSet>().InstallTile);
+            m_SelectButton.onClick.AddListener(ReduceTileLimit);
+            m_LatestTileSetNum = num;
 
-            m_TileLimitText[num].text = (--m_TileLimit[num]).ToString();
-            if(m_TileLimit[num] <= 0)
-            {
-                m_Buttons[num].interactable = false;
-                m_Buttons[num].gameObject.GetComponent<Image>().color = new Color(100, 100, 100, 255);
-            }
         }
     }
 
@@ -79,6 +77,16 @@ public class TileSetSpawner : MonoBehaviour
         else
         {
             m_ButtonPanel.gameObject.SetActive(false);
+        }
+    }
+
+    private void ReduceTileLimit()
+    {
+        m_TileLimitText[m_LatestTileSetNum].text = (--m_TileLimit[m_LatestTileSetNum]).ToString();
+        if (m_TileLimit[m_LatestTileSetNum] <= 0)
+        {
+            m_Buttons[m_LatestTileSetNum].interactable = false;
+            m_Buttons[m_LatestTileSetNum].gameObject.GetComponent<Image>().color = new Color(100, 100, 100, 255);
         }
     }
 }

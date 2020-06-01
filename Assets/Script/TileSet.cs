@@ -25,15 +25,9 @@ public class TileSet : MonoBehaviour
         m_Children[m_ChildrenSel].SetActive(true);
     }
 
-    public void RotateTileSet_RCW()
+    public void CancelTile()
     {
-        m_Children[m_ChildrenSel--].SetActive(false);
-
-        if (m_ChildrenSel <= 0)
-        {
-            m_ChildrenSel = m_Children.Length - 1;
-        }
-        m_Children[m_ChildrenSel].SetActive(true);
+        Destroy(gameObject);
     }
 
     public void InstallTile()

@@ -19,22 +19,22 @@ public class MoveCamera : MonoBehaviour
     {
         int touchCount = Input.touchCount;
 
-        if (touchCount == 1)
-        {
-            if (prevPos == Vector2.zero)
-            {
-                prevPos = Input.GetTouch(0).position;
-                return;
-            }
+        //if (touchCount == 1)
+        //{
+        //    if (prevPos == Vector2.zero)
+        //    {
+        //        prevPos = Input.GetTouch(0).position;
+        //        return;
+        //    }
         
-        Vector2 dir = (Input.GetTouch(0).position - prevPos).normalized;
-        Vector3 vec = new Vector3(dir.x, 0, dir.y);
+        //Vector2 dir = (Input.GetTouch(0).position - prevPos).normalized;
+        //Vector3 vec = new Vector3(dir.x, 0, dir.y);
 
-        cam.position -= vec * moveSpeed * Time.deltaTime;
-        prevPos = Input.GetTouch(0).position;
-        }
+        //cam.position -= vec * moveSpeed * Time.deltaTime;
+        //prevPos = Input.GetTouch(0).position;
+        //}
 
-        else if (touchCount == 2)
+        if (touchCount == 2)
         {
             if (prevDistance == 0)
             {

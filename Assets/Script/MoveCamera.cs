@@ -46,10 +46,17 @@ public class MoveCamera : MonoBehaviour
 
             Vector3 pos = cam.position;
 
-            if (move < 0) pos.y -= moveSpeed * Time.deltaTime;
-            else if (move > 0) pos.y += moveSpeed * Time.deltaTime;
-
-            cam.position = pos;
+            if (move < 0)
+            {
+                //pos.y -= moveSpeed * Time.deltaTime;
+                cam.GetComponent<Camera>().orthographicSize -= moveSpeed * Time.deltaTime;
+            }
+            else if (move > 0) 
+            {
+                //pos.y += moveSpeed * Time.deltaTime;
+                cam.GetComponent<Camera>().orthographicSize += moveSpeed * Time.deltaTime;
+            }
+            //cam.position = pos;
             prevDistance = curDistance;
         }
         

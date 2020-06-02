@@ -145,7 +145,7 @@ public class PlayerController : MonoBehaviour
                     }
                 }
             }
-            yield return null;
+            yield return new WaitForSeconds(0.025f);
         }
         m_PlayerAnimator.SetBool("IsMoving", false);
         Debug.Log("isMoving False");

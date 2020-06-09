@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GameEndTile : MonoBehaviour
+public class GameEndTile : Tile
 {
-    private UnityEvent m_onPlayerEnter = new UnityEvent();
+    private UnityEvent m_onPlayerStepOn = new UnityEvent();
 
-    public UnityEvent m_OnPlayerEnter { get => m_onPlayerEnter;}
+    public UnityEvent m_OnPlayerStepOn { get => m_onPlayerStepOn;}
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public override void OnPlayerStepOn(PlayerController pc)
     {
-        if(collision.gameObject.GetComponent<PlayerController>() != null)
-        {
-            m_onPlayerEnter.Invoke();
-        }
+        base.OnPlayerStepOn(pc);
+        m_onPlayerStepOn.Invoke();
     }
 }

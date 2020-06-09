@@ -26,12 +26,10 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Ray ray2NowTile = Camera.main.ScreenPointToRay(Camera.main.WorldToScreenPoint(transform.position));//현재 서 있는 타일을 검출
-            RaycastHit2D hit2NowTile = Physics2D.Raycast(ray2NowTile.origin, ray2NowTile.direction, 100, 1 << 8);//8번 레이어, 타일만 들어있는 레이어
+            Tile nowTile = GetNowTile();
 
-            if (hit2NowTile.collider == null)
+            if(nowTile == null)
             {
-                Debug.LogError("Now Tile Not Detected");
                 return;
             }
 
@@ -41,7 +39,7 @@ public class PlayerController : MonoBehaviour
             if (hit2ClickedTile.collider != null)
             {
                 Debug.Log(hit2ClickedTile.collider.gameObject.name);
-                Move(hit2NowTile.collider.gameObject.GetComponent<Tile>(), hit2ClickedTile.collider.gameObject.GetComponent<Tile>());
+                Move(nowTile, hit2ClickedTile.collider.gameObject.GetComponent<Tile>());
             }
             else
             {
@@ -150,5 +148,24 @@ public class PlayerController : MonoBehaviour
         m_PlayerAnimator.SetBool("IsMoving", false);
         Debug.Log("isMoving False");
         m_Dest = null;
+
+
+        Tile now = GetNowTile();
+        now.OnPlayerStepOn(this);
+    }
+
+
+    private Tile GetNowTile()
+    {
+        Ray ray2NowTile = Camera.main.ScreenPointToRay(Camera.main.WorldToScreenPoint(transform.position));//현재 서 있는 타일을 검출
+        RaycastHit2D hit2NowTile = Physics2D.Raycast(ray2NowTile.origin, ray2NowTile.direction, 100, 1 << 8);//8번 레이어, 타일만 들어있는 레이어
+
+        if (hit2NowTile.collider == null || hit2NowTile.collider.gameObject.GetComponent<Tile>() == null)
+        {
+            Debug.LogError("Now Tile Not Detected");
+            return null;
+        }
+
+        return hit2NowTile.collider.gameObject.GetComponent<Tile>();
     }
 }

@@ -10,17 +10,6 @@ public class StageGameMode : MonoBehaviour
     private GameEndInfo m_GameEndInfo = null;
 
     [SerializeField]
-    private Text m_TimeText = null;
-
-    [SerializeField]
-    private float m_TimeLimit = 0.0f;
-
-    private int m_GhostCnt = 0;
-
-    [SerializeField]
-    private Ghost[] m_Ghosts = null;
-
-    [SerializeField]
     private GameEndTile m_EndTile = null;
 
     [SerializeField]
@@ -28,6 +17,7 @@ public class StageGameMode : MonoBehaviour
 
     [SerializeField]
     private Camera m_CharacterCamera = null;
+
     [SerializeField]
     private Camera m_FullScreenCamera = null;
 
@@ -35,12 +25,9 @@ public class StageGameMode : MonoBehaviour
 
     private void Awake()
     {
-        foreach(var v in m_Ghosts)
-        {
-            v.m_OnGainEvent.AddListener(OnGhostAcquired);
-        }
-        m_EndTile.m_OnPlayerEnter.AddListener(OnGameEnd);
+        m_EndTile.m_OnPlayerStepOn.AddListener(OnGameEnd);
     }
+
 
     public void SetGamePause(bool haveToPause)
     {
@@ -56,22 +43,25 @@ public class StageGameMode : MonoBehaviour
 
     private void OnGameEnd()
     {
-        int cnt = 1;
-        if(m_GhostCnt >= m_Ghosts.Length)
+
+        ClearCondition[] conditions = GetComponents<ClearCondition>();
+
+        if(conditions.Length != 2)
         {
-            ++cnt;
+            Debug.LogError("Clear Condition is not two");
         }
-        if(m_TimeLimit >= 0.0f)
+
+        int cnt = 1;
+
+        foreach( var v in conditions)
         {
-            ++cnt;
+            if(v.GetIsClear())
+            {
+                ++cnt;
+            }
         }
 
         m_GameEndInfo.ShowGameEndInfo(cnt);
-    }
-
-    private void OnGhostAcquired()
-    {
-        ++m_GhostCnt;
     }
 
     public void NextStage()

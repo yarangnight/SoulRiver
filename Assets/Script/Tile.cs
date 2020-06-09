@@ -121,4 +121,9 @@ public class Tile : MonoBehaviour
         }
         return false;
     }
+
+    public virtual void OnPlayerStepOn(PlayerController pc)
+    {
+        Debug.Log("Call");
+    }
 }

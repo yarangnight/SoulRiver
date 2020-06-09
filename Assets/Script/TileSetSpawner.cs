@@ -89,4 +89,9 @@ public class TileSetSpawner : MonoBehaviour
             m_Buttons[m_LatestTileSetNum].gameObject.GetComponent<Image>().color = new Color(100, 100, 100, 255);
         }
     }
+
+    public int[] GetTileLimits()
+    {
+        return m_TileLimit;
+    }
 }

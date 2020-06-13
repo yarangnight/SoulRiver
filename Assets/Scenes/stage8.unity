@@ -6801,6 +6801,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameEndPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 6998205011404248047, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7076447618314181024, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_Name
@@ -6846,7 +6851,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: bbdeebad0b7e3874ebb5edb795881c5a, type: 3}
 --- !u!114 &916945713 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1467327139796383762, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+  m_CorrespondingSourceObject: {fileID: 4352800772178056137, guid: bbdeebad0b7e3874ebb5edb795881c5a,
     type: 3}
   m_PrefabInstance: {fileID: 916945712}
   m_PrefabAsset: {fileID: 0}

@@ -21,11 +21,22 @@ public class StageGameMode : MonoBehaviour
     [SerializeField]
     private Camera m_FullScreenCamera = null;
 
+    [SerializeField]
+    private GameObject m_PausePanel = null;
+
     private bool m_IsCharCamera = true;
 
     private void Awake()
     {
         m_EndTile.m_OnPlayerStepOn.AddListener(OnGameEnd);
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SetGamePause(true);
+        }
     }
 
 
@@ -34,10 +45,12 @@ public class StageGameMode : MonoBehaviour
         if(haveToPause)
         {
             Time.timeScale = 0.0f;
+            m_PausePanel.SetActive(true);
         }
         else
         {
             Time.timeScale = 1.0f;
+            m_PausePanel.SetActive(false);
         }
     }
 
@@ -84,4 +97,14 @@ public class StageGameMode : MonoBehaviour
             m_FullScreenCamera.enabled = false;
         }
     }
+
+    public void Quit()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+         Application.Quit();
+#endif
+    }
+
 }

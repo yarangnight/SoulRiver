@@ -6385,6 +6385,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4295066585218447339, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4623452387657640246, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6394,6 +6399,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SpawnTileSet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4979650361962466171, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5027213020332684670, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
@@ -6507,7 +6517,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: bbdeebad0b7e3874ebb5edb795881c5a, type: 3}
 --- !u!114 &823422246 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1467327139796383762, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+  m_CorrespondingSourceObject: {fileID: 4352800772178056137, guid: bbdeebad0b7e3874ebb5edb795881c5a,
     type: 3}
   m_PrefabInstance: {fileID: 823422245}
   m_PrefabAsset: {fileID: 0}
@@ -7343,7 +7353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GameEndInfo: {fileID: 823422246}
   m_EndTile: {fileID: 622412200}
-  m_NextSceneName: Stage2
+  m_NextSceneName: stage4
   m_CharacterCamera: {fileID: 385406181}
   m_FullScreenCamera: {fileID: 0}
 --- !u!114 &2124718300

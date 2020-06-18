@@ -69,9 +69,9 @@ public class MoveCamera : MonoBehaviour
                 //pos.y += moveSpeed * Time.deltaTime;
                 float temp = cam.GetComponent<Camera>().orthographicSize + moveSpeed * Time.deltaTime;
 
-                if (temp < m_CameraMinSize)
+                if (temp > m_CameraMaxSize)
                 {
-                    temp = m_CameraMinSize;
+                    temp = m_CameraMaxSize;
                 }
 
                 cam.GetComponent<Camera>().orthographicSize = temp;

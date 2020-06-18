@@ -624,11 +624,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1195f69bc2d51fb458e4239957afff04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GameEndInfo: {fileID: 1847676881}
+  m_GameEndInfo: {fileID: 0}
   m_EndTile: {fileID: 411097579}
   m_NextSceneName: Stage2
   m_CharacterCamera: {fileID: 1789111694}
   m_FullScreenCamera: {fileID: 0}
+  m_PausePanel: {fileID: 0}
 --- !u!114 &1074139487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6083,6 +6084,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   cam: {fileID: 1789111696}
+  m_CameraMaxSize: 0
+  m_CameraMinSize: 0
 --- !u!4 &1789111696
 Transform:
   m_ObjectHideFlags: 0
@@ -6724,17 +6727,17 @@ PrefabInstance:
     - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_TileLimit.Array.data[0]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_TileLimit.Array.data[1]
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_TileLimit.Array.data[6]
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
@@ -6816,6 +6819,16 @@ PrefabInstance:
       propertyPath: m_Buttons.Array.data[5]
       value: 
       objectReference: {fileID: 1847676886}
+    - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_TileLimit.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_TileLimit.Array.data[5]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4175698060494004657, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -6966,18 +6979,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7515869129638544456, guid: bbdeebad0b7e3874ebb5edb795881c5a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bbdeebad0b7e3874ebb5edb795881c5a, type: 3}
---- !u!114 &1847676881 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4352800772178056137, guid: bbdeebad0b7e3874ebb5edb795881c5a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1847676880}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7f249a9828b0346a763d9f55b2f26f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1847676882 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5119079957553146741, guid: bbdeebad0b7e3874ebb5edb795881c5a,

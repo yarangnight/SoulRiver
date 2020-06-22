@@ -13,8 +13,16 @@ public class TimeLimitClearCondition : ClearCondition
 
     private void Update()
     {
-        m_TimeLimit -= Time.deltaTime;
-        m_TimeText.text = "" + Mathf.Round(m_TimeLimit);
+        if(m_TimeLimit > 0)
+        {
+            m_TimeLimit -= Time.deltaTime;
+            if(m_TimeLimit < 0)
+            {
+                m_TimeLimit = 0;
+            }
+
+            m_TimeText.text = "" + Mathf.Round(m_TimeLimit);
+        }
     }
 
 

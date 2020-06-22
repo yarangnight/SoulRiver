@@ -57,6 +57,7 @@ public class StageGameMode : MonoBehaviour
     private void OnGameEnd()
     {
 
+        Time.timeScale = 0.0f;
         ClearCondition[] conditions = GetComponents<ClearCondition>();
 
         if(conditions.Length != 2)

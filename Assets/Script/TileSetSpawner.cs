@@ -71,8 +71,8 @@ public class TileSetSpawner : MonoBehaviour
     {
         if(m_NowTileSet != null)
         {
-            Debug.Log(Camera.main.WorldToScreenPoint(m_NowTileSet.transform.position));
-            m_ButtonPanel.position = Camera.main.WorldToScreenPoint(m_NowTileSet.transform.position);
+            //Debug.Log(Camera.main.WorldToScreenPoint(m_NowTileSet.transform.position));
+            //m_ButtonPanel.position = Camera.main.WorldToScreenPoint(m_NowTileSet.transform.position);
         }
         else
         {

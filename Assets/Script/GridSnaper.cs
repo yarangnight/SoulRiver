@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class GridSnaper : MonoBehaviour//정렬은 반드시 업데이트에서 하자 LateUpdate를 실험해 봤는데 trasnform.position이 정렬되기 전 값이 나오게 된다
+public class GridSnaper : MonoBehaviour//정렬은 반드시 업데이트에서 하자 LateUpdate를 실험해 봤는데 trasnform.position이 정렬되기 전 값이 나오게 된다//
 {
     [SerializeField]
     private SpriteRenderer m_targetSprite = null;
@@ -11,7 +11,12 @@ public class GridSnaper : MonoBehaviour//정렬은 반드시 업데이트에서 
     [SerializeField]
     private bool m_HaveToSort = false;
 
-    void Update()
+    private void Awake()
+    {
+        LateUpdate();
+    }
+
+    void LateUpdate()
     {
         float x = transform.position.x * 2;
         float y = transform.position.y * 4;

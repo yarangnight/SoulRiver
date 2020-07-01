@@ -29,6 +29,7 @@ public class StageGameMode : MonoBehaviour
     private void Awake()
     {
         m_EndTile.m_OnPlayerStepOn.AddListener(OnGameEnd);
+        Time.timeScale = 1.0f;
     }
 
     private void Update()
@@ -106,6 +107,11 @@ public class StageGameMode : MonoBehaviour
 #else
          Application.Quit();
 #endif
+    }
+
+    public void Return2StageSelect()
+    {
+        SceneManager.LoadScene("StageSelectScene");
     }
 
 }

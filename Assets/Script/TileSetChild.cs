@@ -15,8 +15,15 @@ public class TileSetChild : MonoBehaviour//MouseDrag이벤트를 TileSet으로 �
 
     private bool m_isOverlaped = false;
 
+    private bool m_isDraged = false;
+
     private void Update()
     {
+        if(Input.GetMouseButtonUp(0))
+        {
+            OnMouseUp();
+        }
+
         Debug.Log(m_Parents.transform.position);
 
         m_isOverlaped = false;
@@ -37,12 +44,29 @@ public class TileSetChild : MonoBehaviour//MouseDrag이벤트를 TileSet으로 �
         {
             GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, 0.5f);
         }
+
+        if (m_isDraged)
+        {
+            Vector3 temp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            m_Parents.transform.position = new Vector3(temp.x, temp.y, 0);
+        }
+
     }
 
-    private void OnMouseDrag()
+    public void OnMouseDrag()
     {
         Vector3 temp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         m_Parents.transform.position = new Vector3(temp.x, temp.y, 0);
+    }
+
+    public void OnMouseDown()
+    {
+        m_isDraged = true;
+    }
+
+    public void OnMouseUp()
+    {
+        m_isDraged = false;
     }
 
     public bool InstallTiles()

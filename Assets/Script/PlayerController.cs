@@ -20,30 +20,36 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //DontDestroyOnLoad(this.gameObject); // 씬이 넘어갔을 때 오브젝트가 사라지는 것을 방지
+
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Time.timeScale > 0.0f)
         {
-            Tile nowTile = GetNowTile();
 
-            if(nowTile == null)
-            {
-                return;
-            }
 
-            Ray ray2ClickedTile = Camera.main.ScreenPointToRay(Input.mousePosition);//클릭한 타일을 검출
-            RaycastHit2D hit2ClickedTile = Physics2D.Raycast(ray2ClickedTile.origin, ray2ClickedTile.direction, 100, 1 << 8);//레이어 마스크 8번 Tile만 들어있는 레이어
+            if (Input.GetMouseButtonDown(0))
+            {
+                Tile nowTile = GetNowTile();
 
-            if (hit2ClickedTile.collider != null)
-            {
-                Debug.Log(hit2ClickedTile.collider.gameObject.name);
-                Move(nowTile, hit2ClickedTile.collider.gameObject.GetComponent<Tile>());
-            }
-            else
-            {
-                Debug.Log("not Detected");
+                if (nowTile == null)
+                {
+                    return;
+                }
+
+                Ray ray2ClickedTile = Camera.main.ScreenPointToRay(Input.mousePosition);//클릭한 타일을 검출
+                RaycastHit2D hit2ClickedTile = Physics2D.Raycast(ray2ClickedTile.origin, ray2ClickedTile.direction, 100, 1 << 8);//레이어 마스크 8번 Tile만 들어있는 레이어
+
+                if (hit2ClickedTile.collider != null)
+                {
+                    Debug.Log(hit2ClickedTile.collider.gameObject.name);
+                    Move(nowTile, hit2ClickedTile.collider.gameObject.GetComponent<Tile>());
+                }
+                else
+                {
+                    Debug.Log("not Detected");
+                }
             }
         }
     }
@@ -74,11 +80,11 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator MoveCorouitne(Tile[] path)
     {
-        if(path.Length <= 0)
+        if (path.Length <= 0)
         {
             yield break;
         }
-        m_PlayerAnimator.SetBool("IsMoving",true);
+        m_PlayerAnimator.SetBool("IsMoving", true);
         Debug.Log("isMoving true");
         int i = 0;
 
@@ -113,11 +119,11 @@ public class PlayerController : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, path[i].transform.position, m_PlayerSpeed);
             if (Vector3.Distance(transform.position, path[i].transform.position) <= Vector3.kEpsilon)
             {
-                if(++i >= path.Length)
+                if (++i >= path.Length)
                 {
                     break;
                 }
-                
+
                 if (transform.position.y < path[i].transform.position.y)
                 {
                     m_PlayerAnimator.SetBool("IsFront", false);

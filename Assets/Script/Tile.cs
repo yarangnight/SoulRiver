@@ -118,7 +118,7 @@ public class Tile : MonoBehaviour
         {
             if (hitLeftDown.collider.gameObject.GetComponent<Tile>() != null)
             {
-                if (hitLeftDown.collider.gameObject.GetComponent<Tile>() != null)
+                if (hitLeftDown.collider.gameObject.GetComponent<Tile>().isWalkable)
                 {
                     closeTileList.Add(hitLeftDown.collider.gameObject.GetComponent<Tile>());
                 }

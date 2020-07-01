@@ -1074,7 +1074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -22, y: 21}
   m_SizeDelta: {x: 48, y: 62}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &1357963091715762075
@@ -1239,7 +1239,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -22, y: 21}
   m_SizeDelta: {x: 47, y: 60}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &1357963092669426130
@@ -1357,7 +1357,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -22, y: 21}
   m_SizeDelta: {x: 48, y: 61}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1357963092980868108
@@ -4208,7 +4208,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2330348936473882043}
-        m_MethodName: Quit
+        m_MethodName: Return2StageSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

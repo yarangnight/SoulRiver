@@ -390,6 +390,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3edd984210334114882c7762b321a4e7, type: 3}
+--- !u!1 &274329756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5156919381548213008, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1241774358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &274329757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274329756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca73e3990efdd24db1f92dac3dfc079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_QuestText: 
+  m_tileSetSpawner: {fileID: 1026406521}
+  m_RemainingTileLimits: 6
 --- !u!1001 &457820636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -860,6 +881,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3edd984210334114882c7762b321a4e7, type: 3}
+--- !u!114 &1026406521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1241774358}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc3ec18e4426fdc49820facc322d18e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1168703034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2375,6 +2408,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetGamePause
       objectReference: {fileID: 0}
+    - target: {fileID: 5935304072079851934, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_TimeLimit
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 6064703136745412755, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2852,6 +2890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7515869129638544456, guid: bbdeebad0b7e3874ebb5edb795881c5a, type: 3}
+    - {fileID: 6692101474862866907, guid: bbdeebad0b7e3874ebb5edb795881c5a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bbdeebad0b7e3874ebb5edb795881c5a, type: 3}
 --- !u!1001 &1282150883
 PrefabInstance:

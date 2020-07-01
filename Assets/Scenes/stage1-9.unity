@@ -2493,7 +2493,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7515869129638544456, guid: bbdeebad0b7e3874ebb5edb795881c5a, type: 3}
+    - {fileID: 5935304072079851934, guid: bbdeebad0b7e3874ebb5edb795881c5a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bbdeebad0b7e3874ebb5edb795881c5a, type: 3}
+--- !u!1 &1107943263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5156919381548213008, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1107943262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1107943264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1107943262}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc3ec18e4426fdc49820facc322d18e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1107943265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107943263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca73e3990efdd24db1f92dac3dfc079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_QuestText: 
+  m_tileSetSpawner: {fileID: 1107943264}
+  m_RemainingTileLimits: 7
 --- !u!1001 &1164979841
 PrefabInstance:
   m_ObjectHideFlags: 0

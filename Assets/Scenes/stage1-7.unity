@@ -7211,7 +7211,7 @@ PrefabInstance:
     - target: {fileID: 5935304072079851934, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_TimeLimit
-      value: 80
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6064703136745412755, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
@@ -7372,6 +7372,11 @@ PrefabInstance:
     - target: {fileID: 6611300451523576142, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6692101474862866907, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_Ghosts.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6692101474862866907, guid: bbdeebad0b7e3874ebb5edb795881c5a,

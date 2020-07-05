@@ -4,16 +4,38 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-    [SerializeField]
-    private bool isWalkable = true;
+    [SerializeField] private bool isWalkable = true;
 
     private Tile[] m_closeTiles = null;
 
     public Tile[] m_CloseTiles { get => m_closeTiles; }
+    public bool IsWalkable
+    {
+        get => isWalkable;
+        set
+        {
+            isWalkable = value;
+            if(isWalkable == true)
+            {
+                TileNavigator.Instance.RegisterTile(this);
+                DetectCloseTile();
+                foreach (var v in m_closeTiles)
+                {
+                    if (v == null)
+                    {
+                        Debug.LogError("ffff");
+                    }
 
+                    if (!v.HaveTile(this))//주변 타일이 자신을 가지고 있는지 체크
+                    {
+                        v.DetectCloseTile();//자신을 가지고 있지 않다면 다시 인식하도록 함
+                    }
+                }
+            }
+        }
+    }
 
-    [HideInInspector]
-    public int m_Id;
+    [HideInInspector] public int m_Id;
 
     private void Awake()
     {
@@ -36,7 +58,7 @@ public class Tile : MonoBehaviour
             {
                 if (v == null)
                 {
-                    Debug.LogError("Tlqkf");
+                    Debug.LogError("ffff");
                 }
 
 
@@ -96,7 +118,7 @@ public class Tile : MonoBehaviour
         {
             if (hitLeftDown.collider.gameObject.GetComponent<Tile>() != null)
             {
-                if (hitLeftDown.collider.gameObject.GetComponent<Tile>() != null)
+                if (hitLeftDown.collider.gameObject.GetComponent<Tile>().isWalkable)
                 {
                     closeTileList.Add(hitLeftDown.collider.gameObject.GetComponent<Tile>());
                 }
@@ -120,5 +142,10 @@ public class Tile : MonoBehaviour
             }
         }
         return false;
+    }
+
+    public virtual void OnPlayerStepOn(PlayerController pc)
+    {
+        Debug.Log("Call");
     }
 }

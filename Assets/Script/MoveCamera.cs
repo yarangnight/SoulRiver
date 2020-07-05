@@ -8,6 +8,10 @@ public class MoveCamera : MonoBehaviour
     public float moveSpeed;
     public Transform cam;
 
+    [SerializeField] private float m_CameraMaxSize;
+    [SerializeField] private float m_CameraMinSize;
+
+
     Vector2 prevPos = Vector2.zero;
     float prevDistance = 0f;
 
@@ -49,12 +53,28 @@ public class MoveCamera : MonoBehaviour
             if (move < 0)
             {
                 //pos.y -= moveSpeed * Time.deltaTime;
-                cam.GetComponent<Camera>().orthographicSize -= moveSpeed * Time.deltaTime;
+                float temp = cam.GetComponent<Camera>().orthographicSize - moveSpeed * Time.deltaTime;
+
+                if(temp < m_CameraMinSize)
+                {
+                    temp = m_CameraMinSize;
+                }
+
+                cam.GetComponent<Camera>().orthographicSize = temp;
+
+                
             }
             else if (move > 0) 
             {
                 //pos.y += moveSpeed * Time.deltaTime;
-                cam.GetComponent<Camera>().orthographicSize += moveSpeed * Time.deltaTime;
+                float temp = cam.GetComponent<Camera>().orthographicSize + moveSpeed * Time.deltaTime;
+
+                if (temp > m_CameraMaxSize)
+                {
+                    temp = m_CameraMaxSize;
+                }
+
+                cam.GetComponent<Camera>().orthographicSize = temp;
             }
             //cam.position = pos;
             prevDistance = curDistance;

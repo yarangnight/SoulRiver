@@ -13,6 +13,8 @@ public class RectFollowingCamera : MonoBehaviour
 
     private bool m_isUpdateEnabled = false;
 
+    private bool m_toggleEnabled = false;
+
     private void Awake()
     {
         m_Collider = gameObject.GetComponent<BoxCollider2D>();
@@ -41,7 +43,17 @@ public class RectFollowingCamera : MonoBehaviour
 
     IEnumerator UpdateOn()
     {
-        yield return new WaitForSecondsRealtime(2.0f);
+        yield return new WaitForSeconds(2.0f);
         m_isUpdateEnabled = true;
+        m_toggleEnabled = true;
+    }
+
+    public void Toggle()
+    {
+        if(m_toggleEnabled)
+        {
+            m_isUpdateEnabled = !m_isUpdateEnabled;
+            Debug.Log("RectFollowingCamera ToggleEnabled");
+        }
     }
 }

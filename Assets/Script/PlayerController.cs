@@ -6,16 +6,15 @@ public class PlayerController : MonoBehaviour
 {
     private Coroutine m_MoveCoroutine = null;
 
-    [SerializeField]
-    private float m_PlayerSpeed = 0.01f;
+    [SerializeField] private float m_PlayerSpeed = 0.01f;
 
-    [SerializeField]
-    private Animator m_PlayerAnimator = null;
+    [SerializeField] private Animator m_PlayerAnimator = null;
 
-    [SerializeField]
-    private SpriteRenderer m_SpriteRenderer = null;
+    [SerializeField] private SpriteRenderer m_SpriteRenderer = null;
 
     private Tile m_Dest = null;
+
+    private bool m_isMoveEnabled = true;
 
     void Start()
     {
@@ -25,10 +24,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Time.timeScale > 0.0f)
+        if (Time.timeScale > 0.0f && m_isMoveEnabled)
         {
-
-
             if (Input.GetMouseButtonDown(0))
             {
                 Tile nowTile = GetNowTile();
@@ -173,5 +170,15 @@ public class PlayerController : MonoBehaviour
         }
 
         return hit2NowTile.collider.gameObject.GetComponent<Tile>();
+    }
+
+    public void MoveEnable()
+    {
+        m_isMoveEnabled = true;
+    }
+
+    public void MoveDisable()
+    {
+        m_isMoveEnabled = false;
     }
 }

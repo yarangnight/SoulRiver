@@ -11,17 +11,28 @@ public class TimeLimitClearCondition : ClearCondition
     [SerializeField]
     private float m_TimeLimit = 0.0f;
 
+    private bool m_isUpdateEnabled = false;
+
+    private void Start()
+    {
+        StartCoroutine(UpdateOn());
+        m_TimeText.text = "" + Mathf.Round(m_TimeLimit);
+    }
+
     private void Update()
     {
-        if(m_TimeLimit > 0)
+        if (m_isUpdateEnabled)
         {
-            m_TimeLimit -= Time.deltaTime;
-            if(m_TimeLimit < 0)
+            if (m_TimeLimit > 0)
             {
-                m_TimeLimit = 0;
-            }
+                m_TimeLimit -= Time.deltaTime;
+                if (m_TimeLimit < 0)
+                {
+                    m_TimeLimit = 0;
+                }
 
-            m_TimeText.text = "" + Mathf.Round(m_TimeLimit);
+                m_TimeText.text = "" + Mathf.Round(m_TimeLimit);
+            }
         }
     }
 
@@ -32,5 +43,11 @@ public class TimeLimitClearCondition : ClearCondition
 
 
         return m_TimeLimit > 0; 
+    }
+
+    IEnumerator UpdateOn()
+    {
+        yield return new WaitForSecondsRealtime(2.0f);
+        m_isUpdateEnabled = true;
     }
 }

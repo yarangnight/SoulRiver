@@ -114,4 +114,8 @@ public class StageGameMode : MonoBehaviour
         SceneManager.LoadScene("StageSelectScene");
     }
 
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }

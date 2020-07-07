@@ -224,7 +224,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 292303089}
-        m_MethodName: set_name
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -519,7 +519,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 292303089}
-        m_MethodName: set_name
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -987,7 +987,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 292303089}
-        m_MethodName: set_name
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

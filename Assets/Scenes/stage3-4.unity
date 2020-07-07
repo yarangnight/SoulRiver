@@ -13660,6 +13660,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 340602604042625408, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8cde87795b4fc5a46876b5224ec9aef7,
+        type: 3}
+    - target: {fileID: 1222591668921884119, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2190791752720776506, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_Name
@@ -13679,6 +13690,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2759205828333194614, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: StageSelectScene3
       objectReference: {fileID: 0}
     - target: {fileID: 2978937391908788579, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
@@ -13754,6 +13770,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TileLimit.Array.data[4]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025218701385248964, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 435
       objectReference: {fileID: 0}
     - target: {fileID: 5155115529294435590, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}

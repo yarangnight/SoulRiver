@@ -10,6 +10,7 @@ public class StageSelectManager : MonoBehaviour
 
     public void SelectScene(string sceneName)
     {
+        Debug.Log(sceneName);
         SceneManager.LoadScene(sceneName);
     }
 }

@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Tile : MonoBehaviour
 {
+    protected UnityEvent m_onPlayerStepOn = new UnityEvent();
+
+    public UnityEvent m_OnPlayerStepOn { get => m_onPlayerStepOn; }
+
     [SerializeField] private bool isWalkable = true;
 
     private Tile[] m_closeTiles = null;
@@ -146,6 +151,7 @@ public class Tile : MonoBehaviour
 
     public virtual void OnPlayerStepOn(PlayerController pc)
     {
+        m_onPlayerStepOn.Invoke();
         Debug.Log("Call");
     }
 }

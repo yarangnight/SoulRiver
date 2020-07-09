@@ -17,9 +17,9 @@ public class GhostCountClearCondition : ClearCondition
         }
     }
 
-    public override bool GetIsClear()
+    public override bool GetIsSuccess()
     {
-        base.GetIsClear();
+        base.GetIsSuccess();
 
         return m_GhostCnt >= m_Ghosts.Length;
     }

@@ -1821,8 +1821,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1752665029531874537}
   - component: {fileID: 2330348936473882043}
-  - component: {fileID: 6692101474862866907}
-  - component: {fileID: 5935304072079851934}
   m_Layer: 0
   m_Name: GameMode
   m_TagString: Untagged
@@ -1862,35 +1860,6 @@ MonoBehaviour:
   m_CharacterCamera: {fileID: 7398973328889002060}
   m_FullScreenCamera: {fileID: 0}
   m_PausePanel: {fileID: 3239329579346977464}
---- !u!114 &6692101474862866907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5156919381548213008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e83df8a973c31374b987105baaaacda3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_QuestText: 
-  m_Ghosts: []
---- !u!114 &5935304072079851934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5156919381548213008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7798761170a9e34c9c83f5267fa3b2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_QuestText: 
-  m_TimeText: {fileID: 5119079957553146741}
-  m_TimeLimit: 60
 --- !u!1 &5442657005005513140
 GameObject:
   m_ObjectHideFlags: 0
@@ -3625,19 +3594,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7121329451615897323, guid: 60f608b41be2a424788d8c054bf355e1,
+    - target: {fileID: 6687327509878934237, guid: 60f608b41be2a424788d8c054bf355e1,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7121329451615897323, guid: 60f608b41be2a424788d8c054bf355e1,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7121329451615897323, guid: 60f608b41be2a424788d8c054bf355e1,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      propertyPath: m_QuestText.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7121329451615897323, guid: 60f608b41be2a424788d8c054bf355e1,
@@ -3645,21 +3604,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 9075357189644486649}
-    - target: {fileID: 7121329451615897323, guid: 60f608b41be2a424788d8c054bf355e1,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SelectScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 7121329451615897323, guid: 60f608b41be2a424788d8c054bf355e1,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7121329451615897323, guid: 60f608b41be2a424788d8c054bf355e1,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: StageSelectScene
-      objectReference: {fileID: 0}
     - target: {fileID: 7521741124451599256, guid: 60f608b41be2a424788d8c054bf355e1,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -3722,6 +3666,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60f608b41be2a424788d8c054bf355e1, type: 3}
+--- !u!224 &662923627454488564 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5597285998523864169, guid: 60f608b41be2a424788d8c054bf355e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 4944565857216564125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1752050353096032576 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6687327509878934237, guid: 60f608b41be2a424788d8c054bf355e1,
@@ -3734,12 +3684,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e7f249a9828b0346a763d9f55b2f26f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &662923627454488564 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5597285998523864169, guid: 60f608b41be2a424788d8c054bf355e1,
-    type: 3}
-  m_PrefabInstance: {fileID: 4944565857216564125}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5564320417891091729
 PrefabInstance:
   m_ObjectHideFlags: 0

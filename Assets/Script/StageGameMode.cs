@@ -28,7 +28,7 @@ public class StageGameMode : MonoBehaviour
 
     private void Awake()
     {
-        m_EndTile.m_OnPlayerStepOn.AddListener(OnGameEnd);
+        m_EndTile.m_OnPlayerStepOn.AddListener(OnGameClear);
         Time.timeScale = 1.0f;
     }
 
@@ -55,11 +55,12 @@ public class StageGameMode : MonoBehaviour
         }
     }
 
-    private void OnGameEnd()
+    private void OnGameClear()
     {
-
         Time.timeScale = 0.0f;
         ClearCondition[] conditions = GetComponents<ClearCondition>();
+        bool[] isConditionsSuccess = new bool[2];
+
 
         if(conditions.Length != 2)
         {
@@ -67,16 +68,16 @@ public class StageGameMode : MonoBehaviour
         }
 
         int cnt = 1;
-
-        foreach( var v in conditions)
+        GameSaveManager.SetHaveStageStar(SceneManager.GetActiveScene().name, 0, true);//0번 스타는 클리어시 무조건 획득
+        for (int i = 0; i < conditions.Length; ++i)
         {
-            if(v.GetIsClear())
+            if(isConditionsSuccess[i] = conditions[i].GetIsSuccess())
             {
+                GameSaveManager.SetHaveStageStar(SceneManager.GetActiveScene().name, i + 1, true);
                 ++cnt;
             }
         }
-
-        m_GameEndInfo.ShowGameEndInfo(cnt);
+        m_GameEndInfo.ShowGameEndInfo(isConditionsSuccess[0],isConditionsSuccess[1]);
     }
 
     public void NextStage()

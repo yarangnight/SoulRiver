@@ -37,9 +37,9 @@ public class TimeLimitClearCondition : ClearCondition
     }
 
 
-    public override bool GetIsClear()
+    public override bool GetIsSuccess()
     {
-        base.GetIsClear();
+        base.GetIsSuccess();
 
 
         return m_TimeLimit > 0; 

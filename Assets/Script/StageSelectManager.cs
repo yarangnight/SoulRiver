@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class StageSelectManager : MonoBehaviour
 {
-
-
     public void SelectScene(string sceneName)
     {
         Debug.Log(sceneName);

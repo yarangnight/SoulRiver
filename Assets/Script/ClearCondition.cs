@@ -6,7 +6,7 @@ public class ClearCondition : MonoBehaviour
 {
     [SerializeField] private string m_QuestText;
 
-    public virtual bool GetIsClear()
+    public virtual bool GetIsSuccess()
     {
         return true;
     }

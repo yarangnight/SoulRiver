@@ -394,6 +394,7 @@ MonoBehaviour:
   - {fileID: 896725246670075366}
   - {fileID: 896725246209201559}
   m_StageButton: {fileID: 0}
+  m_OffOnAwake: 0
 --- !u!1001 &8102488598291516453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -510,6 +511,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StageQuestPanel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935173202913571129, guid: c3ff748a4ad03b6428e8dec9c795289d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3ff748a4ad03b6428e8dec9c795289d, type: 3}
@@ -659,6 +665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StageQuestPanel (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935173202913571129, guid: c3ff748a4ad03b6428e8dec9c795289d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3ff748a4ad03b6428e8dec9c795289d, type: 3}
@@ -813,6 +824,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StageQuestPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935173202913571129, guid: c3ff748a4ad03b6428e8dec9c795289d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3ff748a4ad03b6428e8dec9c795289d, type: 3}

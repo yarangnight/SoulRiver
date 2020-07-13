@@ -18,11 +18,12 @@ public class DontStepTileCondition : ClearCondition
 
     public override bool GetIsSuccess()
     {
-        return false;
+        return m_NotStep;
     }
 
     private void SetIsStep()
     {
+        Debug.Log("EWQARFAERFWERAFEAR");
         m_NotStep = false;
     }
 }

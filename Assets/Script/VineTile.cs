@@ -12,7 +12,7 @@ public class VineTile : Tile
         set
         {
             base.IsWalkable = value;
-            GetComponent<Animator>().Play("Chap2_pricky");
+            GetComponent<SpriteRenderer>().sprite = m_ChangeTargetSprite;
         }
     }
 }

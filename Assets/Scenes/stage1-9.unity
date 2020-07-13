@@ -7547,6 +7547,21 @@ PrefabInstance:
       propertyPath: m_NextSceneName
       value: stage1-10
       objectReference: {fileID: 0}
+    - target: {fileID: 2413526785717784107, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2413526785717784107, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2413526785717784107, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.53
+      objectReference: {fileID: 0}
     - target: {fileID: 2759205828333194614, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -7640,7 +7655,7 @@ PrefabInstance:
     - target: {fileID: 4759496169361666334, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 10.0000305
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5025218701385248964, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
@@ -7683,6 +7698,11 @@ PrefabInstance:
       propertyPath: m_Ghosts.Array.data[1]
       value: 
       objectReference: {fileID: 1503358373}
+    - target: {fileID: 7398973328889002060, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8012057684934424393, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_LocalPosition.y

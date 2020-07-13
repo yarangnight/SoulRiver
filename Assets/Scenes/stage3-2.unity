@@ -984,7 +984,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123655407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.99, y: -5.712, z: 0}
+  m_LocalPosition: {x: -9.103, y: -5.351, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 11.764112}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9313,6 +9313,16 @@ PrefabInstance:
       propertyPath: m_TileLimit.Array.data[5]
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3540071630210307981, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.0344827
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540071630210307981, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.6781609
+      objectReference: {fileID: 0}
     - target: {fileID: 5025218701385248964, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -10387,7 +10397,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 25
+  m_SortingOrder: 26
   m_Sprite: {fileID: 21300000, guid: 74c575987c90c434bb5c6c05848500d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11840,7 +11850,7 @@ PrefabInstance:
     - target: {fileID: 1779912908573636854, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 22
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1779912908573636854, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
@@ -11942,7 +11952,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_targetSprite
       value: 
-      objectReference: {fileID: 1420314458}
+      objectReference: {fileID: 1348498809}
     - target: {fileID: 7933653121581431421, guid: 3edd984210334114882c7762b321a4e7,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -12350,12 +12360,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!212 &1420314458 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 2229188839405473559, guid: 4de98bccbea8c5f4fa3e9ab84121e435,
-    type: 3}
-  m_PrefabInstance: {fileID: 1918445283}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1429273613
 GameObject:
   m_ObjectHideFlags: 0

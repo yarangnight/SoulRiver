@@ -539,6 +539,7 @@ GameObject:
   - component: {fileID: 78770495}
   - component: {fileID: 78770494}
   - component: {fileID: 78770493}
+  - component: {fileID: 78770496}
   m_Layer: 0
   m_Name: chap2_prickly vines_00
   m_TagString: Untagged
@@ -629,6 +630,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &78770496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78770492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f714afb49fd3d4dbd9041f6a88777a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWalkable: 1
+  m_Id: 0
 --- !u!1 &109448124
 GameObject:
   m_ObjectHideFlags: 0
@@ -8870,6 +8885,7 @@ GameObject:
   - component: {fileID: 1387377592}
   - component: {fileID: 1387377591}
   - component: {fileID: 1387377590}
+  - component: {fileID: 1387377593}
   m_Layer: 0
   m_Name: chap2_rune_00 (1)
   m_TagString: Untagged
@@ -8960,6 +8976,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1387377593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387377589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 026cb0ae6fbcaed4b8b7d65742110f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWalkable: 1
+  m_Id: 0
+  m_TargetTile: {fileID: 1490406709}
 --- !u!1001 &1400733235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9312,6 +9343,7 @@ GameObject:
   - component: {fileID: 1490406708}
   - component: {fileID: 1490406707}
   - component: {fileID: 1490406706}
+  - component: {fileID: 1490406709}
   m_Layer: 0
   m_Name: chap2_prickly vines_00 (1)
   m_TagString: Untagged
@@ -9402,6 +9434,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1490406709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490406705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f714afb49fd3d4dbd9041f6a88777a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWalkable: 1
+  m_Id: 0
 --- !u!1001 &1524392114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11650,6 +11696,7 @@ GameObject:
   - component: {fileID: 1996165970}
   - component: {fileID: 1996165969}
   - component: {fileID: 1996165968}
+  - component: {fileID: 1996165971}
   m_Layer: 0
   m_Name: chap2_rune_00
   m_TagString: Untagged
@@ -11740,6 +11787,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1996165971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996165967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 026cb0ae6fbcaed4b8b7d65742110f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWalkable: 1
+  m_Id: 0
+  m_TargetTile: {fileID: 78770496}
 --- !u!1001 &2052094966
 PrefabInstance:
   m_ObjectHideFlags: 0

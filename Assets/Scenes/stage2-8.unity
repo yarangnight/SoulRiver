@@ -8109,6 +8109,11 @@ PrefabInstance:
       propertyPath: m_Ghosts.Array.data[1]
       value: 
       objectReference: {fileID: 1461817539}
+    - target: {fileID: 7726240516239122674, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: StageSelectScene2
+      objectReference: {fileID: 0}
     - target: {fileID: 8012057684934424393, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_LocalPosition.y

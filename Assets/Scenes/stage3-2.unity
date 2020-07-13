@@ -9354,6 +9354,11 @@ PrefabInstance:
       propertyPath: m_TimeLimit
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 7726240516239122674, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: StageSelectScene3
+      objectReference: {fileID: 0}
     - target: {fileID: 7957240038571197539, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_RootOrder

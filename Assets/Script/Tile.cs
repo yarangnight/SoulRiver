@@ -14,7 +14,7 @@ public class Tile : MonoBehaviour
     private Tile[] m_closeTiles = null;
 
     public Tile[] m_CloseTiles { get => m_closeTiles; }
-    public bool IsWalkable
+    public virtual bool IsWalkable
     {
         get => isWalkable;
         set

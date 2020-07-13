@@ -87,6 +87,11 @@ public class TileSetSpawner : MonoBehaviour
 
     private void ReduceTileLimit()
     {
+        if(m_NowTileSet != null)
+        {
+            return;
+        }
+
         m_TileLimitText[m_LatestTileSetNum].text = (--m_TileLimit[m_LatestTileSetNum]).ToString();
         if (m_TileLimit[m_LatestTileSetNum] <= 0)
         {

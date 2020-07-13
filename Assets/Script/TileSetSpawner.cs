@@ -65,8 +65,9 @@ public class TileSetSpawner : MonoBehaviour
         m_RotateButton_CW.onClick.AddListener(m_nowTileSet.GetComponent<TileSet>().RotateTileSet_CW);
 
         m_SelectButton.onClick.AddListener(m_nowTileSet.GetComponent<TileSet>().InstallTile);
-        m_SelectButton.onClick.AddListener(ReduceTileLimit);
-        m_SelectButton.onClick.AddListener(m_PlayerController.MoveEnable);
+        m_nowTileSet.GetComponent<TileSet>().m_spawner = this;
+        m_nowTileSet.GetComponent<TileSet>().m_playerController = m_PlayerController;
+
 
         m_LatestTileSetNum = num;
         m_PlayerController.MoveDisable();
@@ -85,13 +86,8 @@ public class TileSetSpawner : MonoBehaviour
         }
     }
 
-    private void ReduceTileLimit()
+    public void ReduceTileLimit()
     {
-        if(m_NowTileSet != null)
-        {
-            return;
-        }
-
         m_TileLimitText[m_LatestTileSetNum].text = (--m_TileLimit[m_LatestTileSetNum]).ToString();
         if (m_TileLimit[m_LatestTileSetNum] <= 0)
         {

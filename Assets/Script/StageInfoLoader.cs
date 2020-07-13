@@ -12,6 +12,7 @@ public class StageInfoLoader : MonoBehaviour
     [SerializeField] private Text[] MissionText = null;
 
     [SerializeField] private Button m_StageButton;
+    [SerializeField] private bool m_OffOnAwake = true;
 
     private void Awake()
     {
@@ -28,14 +29,19 @@ public class StageInfoLoader : MonoBehaviour
 
         if (stageNum < 2)
         {
-            m_StageButton.interactable = true;
+            if(m_StageButton != null)
+            {
+                m_StageButton.interactable = true;
+            }   
         }
         else
         {
             m_StageButton.interactable = GameSaveManager.GetHaveStageStar(data[stageNum - 1, 1], 0);
         }
 
-
-        gameObject.SetActive(false);
+        if(m_OffOnAwake)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

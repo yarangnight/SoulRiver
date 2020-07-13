@@ -47,7 +47,7 @@ public class TimeLimitClearCondition : ClearCondition
 
     IEnumerator UpdateOn()
     {
-        yield return new WaitForSecondsRealtime(2.0f);
+        yield return new WaitForSeconds(2.0f);
         m_isUpdateEnabled = true;
     }
 }

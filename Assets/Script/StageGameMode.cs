@@ -29,7 +29,7 @@ public class StageGameMode : MonoBehaviour
     private void Awake()
     {
         m_EndTile.m_OnPlayerStepOn.AddListener(OnGameClear);
-        Time.timeScale = 1.0f;
+        Time.timeScale = 0.0f;
     }
 
     private void Update()
@@ -40,6 +40,10 @@ public class StageGameMode : MonoBehaviour
         }
     }
 
+    public void SetTimeScaleTo1()
+    {
+        Time.timeScale = 1.0f;
+    }
 
     public void SetGamePause(bool haveToPause)
     {

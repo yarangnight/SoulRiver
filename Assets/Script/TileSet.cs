@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class TileSet : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject[] m_Children = null;
-
+    [SerializeField] private GameObject[] m_Children = null;
+    public TileSetSpawner m_spawner = null;
+    public PlayerController m_playerController = null;
     private int m_ChildrenSel;
 
     private void OnMouseDown()
@@ -34,6 +34,8 @@ public class TileSet : MonoBehaviour
     {
         if (m_Children[m_ChildrenSel].GetComponent<TileSetChild>().InstallTiles())
         {
+            m_spawner.ReduceTileLimit();
+            m_playerController.MoveEnable();
             Destroy(gameObject);
         }
     }

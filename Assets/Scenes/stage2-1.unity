@@ -9069,6 +9069,54 @@ PrefabInstance:
       propertyPath: m_TileLimit.Array.data[6]
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_TileSetArr.Array.data[0]
+      value: 
+      objectReference: {fileID: 5138505741223517869, guid: cc75d2d84b774fc4e9723f555a0dbf92,
+        type: 3}
+    - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_TileSetArr.Array.data[1]
+      value: 
+      objectReference: {fileID: 418456717582629818, guid: 5a1dc459246a4e941b4c698526db6e86,
+        type: 3}
+    - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_TileSetArr.Array.data[2]
+      value: 
+      objectReference: {fileID: 4775538212943796528, guid: c5a4b647b280ce34cbdb40df1b1e373c,
+        type: 3}
+    - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_TileSetArr.Array.data[3]
+      value: 
+      objectReference: {fileID: 7787508476508452130, guid: 365272412de07aa439873d86d03dba11,
+        type: 3}
+    - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_TileSetArr.Array.data[4]
+      value: 
+      objectReference: {fileID: 911347690600943363, guid: d299cad9967e608429cf9b68880b4c6c,
+        type: 3}
+    - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_TileSetArr.Array.data[5]
+      value: 
+      objectReference: {fileID: 7714348862863977046, guid: f75d0795bc6138e40a9a40bf82a41bb2,
+        type: 3}
+    - target: {fileID: 3079552262560613882, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_TileSetArr.Array.data[6]
+      value: 
+      objectReference: {fileID: 3052070368522881746, guid: 9c8c7ee0ba996a347aed92c778f1f38b,
+        type: 3}
+    - target: {fileID: 3360405488415140777, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 588be54386d9aa84ea3ab86fee79872d,
+        type: 3}
     - target: {fileID: 4759496169361666334, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y

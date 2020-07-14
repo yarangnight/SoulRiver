@@ -697,6 +697,12 @@ PrefabInstance:
       propertyPath: m_TileLimit.Array.data[6]
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3360405488415140777, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c41aba15e125c94fad7c38bb3a5ce3e,
+        type: 3}
     - target: {fileID: 4759496169361666334, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y

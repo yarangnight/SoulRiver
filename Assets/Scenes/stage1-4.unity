@@ -8603,6 +8603,17 @@ PrefabInstance:
       propertyPath: m_TileLimit.Array.data[6]
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3360405488415140777, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 744f7e9e4b1f15b40a578ca408faf333,
+        type: 3}
+    - target: {fileID: 3360405488415140782, guid: bbdeebad0b7e3874ebb5edb795881c5a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 435
+      objectReference: {fileID: 0}
     - target: {fileID: 4759496169361666334, guid: bbdeebad0b7e3874ebb5edb795881c5a,
         type: 3}
       propertyPath: m_AnchoredPosition.y

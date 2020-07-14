@@ -6166,6 +6166,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Option
       objectReference: {fileID: 0}
+    - target: {fileID: 3910085581470783042, guid: 21d5aa752bc226149aa34a7608c5b615,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910085581964644936, guid: 21d5aa752bc226149aa34a7608c5b615,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910085582673285290, guid: 21d5aa752bc226149aa34a7608c5b615,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910085582761071620, guid: 21d5aa752bc226149aa34a7608c5b615,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6730421685790263384, guid: 21d5aa752bc226149aa34a7608c5b615,
         type: 3}
       propertyPath: m_LocalPosition.x
